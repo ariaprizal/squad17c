@@ -1,0 +1,60 @@
+
+    .jumbotron{
+        background-image: url(img/bg-17c.jpeg);
+        background-size: contain;
+        height: 320px;
+    }
+
+    .jumbotron::after{
+        content: '';
+        display: block;
+        height: 400px ;
+        width: 100%;
+        background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+        top: 0;
+        position: absolute;
+    }
+
+    /* navbar */
+    .navbar{
+        position: relative;
+        z-index: 1;
+    }
+    .navbar-brand{
+        font-family: Viga;
+        font-size: 32px;
+    }
+
+/* desktop */
+@media (min-width: 992px) { 
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 30px;
+    } 
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid cadetblue;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 5px;
+        margin-bottom: -5px;
+    } 
+    .jumbotron{ 
+        margin-top: -75px;
+        background-size: 1350px;
+        height: 900px;
+    }
+    .nav-link , .navbar-brand{
+        text-shadow: 0px 1px 1px rgba(8, 8, 8, 0.7);
+    }
+    .jumbotron::after{
+        content: '';
+        display: block;
+        height: 1000px ;
+        width: 100%;
+        background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+        top: 0;
+        position: absolute;
+    }
+    }
